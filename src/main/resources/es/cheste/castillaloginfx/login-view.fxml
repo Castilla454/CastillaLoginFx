@@ -43,7 +43,7 @@
                   <Image url="@password_icon.png" />
                </image>
             </ImageView>
-            <Button fx:id="loginButton" layoutX="40.0" layoutY="350.0" mnemonicParsing="false" onAction="#onButtonLoginClick" prefHeight="41.0" prefWidth="363.0" style="-fx-background-color: #00ff00; -fx-background-radius: 40;" text="Login" textFill="WHITE">
+            <Button fx:id="loginButton" alignment="CENTER" layoutX="32.0" layoutY="353.0" mnemonicParsing="false" onAction="#onButtonLoginClick" prefHeight="41.0" prefWidth="363.0" style="-fx-background-color: #00ff00; -fx-background-radius: 40;" text="Login" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font></Button>

@@ -1,13 +1,18 @@
 package es.cheste.castillaloginfx;
 
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
+import javafx.stage.StageStyle;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -45,9 +50,8 @@ public class LoginController {
     protected void onButtonLoginClick(ActionEvent event) {
 
         if (checkCredentials()) {
-            // Si las credenciales son correctas
-            loginLabel.setText("¡Inicio de sesión correcto!");
-            loginLabel.setStyle("-fx-text-fill: green;"); // Color verde para el texto
+
+
         } else {
             // Si las credenciales son incorrectas
             loginLabel.setText("Usuario o contraseña incorrectos.");
